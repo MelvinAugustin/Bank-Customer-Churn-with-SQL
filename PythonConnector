@@ -1,0 +1,38 @@
+import mysql.connector
+
+# connect to mysql
+conn = mysql.connector.connect(
+    host="localhost",
+    user="root",
+    password="Rocky1810!",
+    database="churn_db"
+)
+
+cursor = conn.cursor()
+
+# Select names of customers with balance less than 1k
+cursor.execute("""
+    SELECT c.name
+    FROM customers c
+    JOIN accounts a ON c.customer_id = a.customer_id
+    WHERE a.balance < 1000;
+""")
+low_balance_customers = cursor.fetchall()
+print("Customers at risk of churn:")
+for name in low_balance_customers:
+    print(name[0])
+
+# Update churn status 
+cursor.execute("""
+    UPDATE churn cs
+    JOIN accounts a ON cs.customer_id = a.customer_id
+    SET cs.ChurnIndicator = 1
+    WHERE a.balance < 1000;
+""")
+conn.commit()  # Save changes
+
+
+
+# Close connection
+cursor.close()
+conn.close()
