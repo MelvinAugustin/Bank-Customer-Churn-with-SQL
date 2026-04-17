@@ -1,1 +1,0 @@
-SELECT * FROM churn_db.customers;
