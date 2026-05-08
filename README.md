@@ -1,5 +1,5 @@
 # Bank Churn Prediction Dashboard
-![Dashboard](Screenshot 2026-05-08 152540.png)
+![Dashboard](Images/Dashboard.png)
 An interactive machine learning and analytics dashboard built with Python, Streamlit, Scikit-learn, and Plotly for predicting customer churn and exploring customer behavior through advanced visual analytics.
 
 ---
@@ -45,18 +45,18 @@ This dashboard demonstrates how machine learning can help organizations:
 - Reduce revenue loss
 - Optimize customer engagement efforts
 
----
+
 
 # Key Features
-
 ## Machine Learning Model Comparison
-
+![Dashboard](Images/ProbabilityDistribution.png)
 Compare multiple classification approaches including:
 - NORMAL dataset training
 - ROS (Random Oversampling)
 - RUS (Random Undersampling)
 
 Metrics include:
+![Dashboard](Images/RawMetrics.png)
 - Accuracy
 - Recall
 - F1 Score
@@ -70,7 +70,7 @@ Interactive visualizations help evaluate the strengths and weaknesses of each mo
 ## Interactive Analytics Dashboard
 
 Built with Streamlit and Plotly for real-time exploration of data.
-
+![Dashboard](Images/PredictionExplorer.png)
 Features include:
 - Radar charts
 - Correlation heatmaps
@@ -97,7 +97,7 @@ This simulates real-world business decision tuning where organizations balance:
 ## Feature Importance Analysis
 
 Understand which variables contribute most to churn predictions.
-
+![Dashboard](Images/DataOverview.png)
 Examples include:
 - Age
 - Balance
@@ -106,7 +106,7 @@ Examples include:
 - Product count
 
 This improves interpretability and business understanding of the ML model.
-
+![Dashboard](Images/DataOverview2.png)
 ---
 
 ## CSV Upload Support
@@ -239,11 +239,7 @@ Potential future enhancements include:
 - Authentication systems
 - SQL database integration
 
-# Screenshots
 
-
-
----
 
 # Project Goals
 
