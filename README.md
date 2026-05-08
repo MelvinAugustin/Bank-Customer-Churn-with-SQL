@@ -1,5 +1,5 @@
 # Bank Churn Prediction Dashboard
-
+![Dashboard](Screenshot 2026-05-08 152540.png)
 An interactive machine learning and analytics dashboard built with Python, Streamlit, Scikit-learn, and Plotly for predicting customer churn and exploring customer behavior through advanced visual analytics.
 
 ---
